@@ -8,9 +8,9 @@ import { type Game } from '../scripts/types'
 import { ref, computed } from 'vue'
 
 const games = ref<Game[]>([
-    { id: 1, title: "caca", description: "caca", image: "/src/assets/img/noimage.png", rating: 5, genres: ["mmorpg", "survival"], releaseDate: "2/10/2024", price: 5,  stock: 1 },
-    { id: 2, title: "poopoo", description: "www", image: "/src/assets/img/noimage.png", rating: 7, genres: ["adventure"], releaseDate: "8/1/2022", price: 10,  stock: 10 },
-    { id: 3, title: "po po", description: "aaa", image: "/src/assets/img/noimage.png", rating: 3, genres: ["openworld"], releaseDate: "15/11/2021", price: 4,  stock: 5 }
+    { id: 1, title: "Test1", description: "a", image: "/src/assets/img/noimage.png", rating: 5, genres: ["mmorpg", "survival"], releaseDate: "2/10/2024", price: 5,  stock: 1 },
+    { id: 2, title: "Test2", description: "b", image: "/src/assets/img/noimage.png", rating: 7, genres: ["adventure"], releaseDate: "8/1/2022", price: 10,  stock: 10 },
+    { id: 3, title: "Test3", description: "c", image: "/src/assets/img/noimage.png", rating: 3, genres: ["openworld"], releaseDate: "15/11/2021", price: 4,  stock: 5 }
 ])
 
 const searchQuery = ref('')

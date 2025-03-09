@@ -3,7 +3,7 @@ import { type Game } from '../scripts/types'
 import { ref, watchEffect } from 'vue'
 import AddPreview from './AddPreview.vue'
 import errorImage from '/src/assets/img/noimage.png'
-import Modal from 'bootstrap/js/dist/modal'
+import Modal from 'bootstrap/js/dist/modal.js'
 
 const props = defineProps<{ 
     games: Game[]

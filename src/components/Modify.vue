@@ -2,7 +2,7 @@
 import { type Game } from '../scripts/types'
 import { ref } from 'vue'
 import AddPreview from './AddPreview.vue'
-import Modal from 'bootstrap/js/dist/modal'
+import Modal from 'bootstrap/js/dist/modal.js'
 
 const props = defineProps<{ game: Game }>()
 

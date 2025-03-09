@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { type Game } from '../scripts/types';
-import { defineProps, ref, defineEmits, onMounted } from 'vue';
-import Modal from 'bootstrap/js/dist/modal';
+import { type Game } from '../scripts/types'
+import { defineProps, ref, defineEmits, onMounted } from 'vue'
+import Modal from 'bootstrap/js/dist/modal.js'
 
 const emit = defineEmits(['changeView', 'duplicateGame', 'deleteGame'])
 
-const props = defineProps<{ games: Game[] }>();
+const props = defineProps<{ games: Game[] }>()
 
-const selectedGame = ref<Game | null>(null);
+const selectedGame = ref<Game | null>(null)
 
-const outOfStockGame = ref<Game | null>(null);
+const outOfStockGame = ref<Game | null>(null)
 
 function openDeleteModal(game: Game) {
     selectedGame.value = game;
@@ -22,7 +22,9 @@ function confirmDelete() {
         emit('deleteGame', selectedGame.value)
     }
     const modal = Modal.getInstance(document.getElementById('deleteModal')!);
-    modal.hide();
+    if (modal) {
+        modal?.hide();
+    }
 }
 
 function duplicateGame(game: Game) {
