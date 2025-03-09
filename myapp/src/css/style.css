@@ -1,0 +1,72 @@
+.logo {
+    display: block;
+    max-width: 100px;
+    height: 100px;
+    margin-right: 2%;
+  }
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 10px rgba(0, 0, 0, 0.305);    
+  }
+
+  .input-container {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+
+.input-with-icon {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 300px; 
+}
+
+.card {
+  flex: 1;
+  min-height: 100%;
+  width: 400px;
+}
+
+.games {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.arrow {
+  width: 5%;
+  height: 5%;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  height: fit-content;
+  padding: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
