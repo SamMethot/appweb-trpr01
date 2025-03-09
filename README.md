@@ -20,3 +20,6 @@ Cette variable sert à créer un nouveau jeu en modifiant son id. J'ai utiliser 
     img.onerror = () => validImage.value = errorImage;
 }
 Cette fonction est une fonction async, car elle sert a faire des requête sur le web, elle est utile, car j'utilise une recherche d'URL sur le web. Le onload sert a faire charger l'image avec son URL en ligne pour ensuite l'attribuer a la variable validImage le onerror fait en sorte que si le onload ne fonction pas, il vas attribuer une image d'erreur a la variable validImage.
+
+GitHub URL : https://github.com/SamMethot/appweb-trpr01
+Site déployé : https://sammethot.github.io/appweb-trpr01/
